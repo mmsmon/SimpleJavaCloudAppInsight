@@ -3,12 +3,12 @@ Simple Java Cloud Application with Azure Application Insight
 
 Example to configure Java application to Microsoft Azure Application Insight
 
-# Create a Azure Application Insight Resource
+- Create a Azure Application Insight Resource
 
 
-# Create a Maven project
+- Create a Maven project
 
-# Add pom.xml dependency 
+- Add pom.xml dependency 
 
 <dependency>
     <groupId>com.microsoft.azure</groupId>
