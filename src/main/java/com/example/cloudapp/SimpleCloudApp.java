@@ -78,7 +78,6 @@ public class SimpleCloudApp {
                 tc.trackDependency(remoteDependencyTelemetry);
             }
 
-
             Logger log = LogManager.getRootLogger();
             log.info("Log Message from CloudApp");
 
