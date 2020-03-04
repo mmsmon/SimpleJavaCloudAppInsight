@@ -10,10 +10,12 @@ Example to configure Java application to Microsoft Azure Application Insight
 
 - Add pom.xml dependency 
 
+```xml
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>applicationinsights-core</artifactId>
     <version>2.5.1</version>
 </dependency>
+```
 
 # 
