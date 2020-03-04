@@ -9,7 +9,7 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
-        <ApplicationInsightsAppender name="simpleCloudApp" instrumentationKey="4084660c-da48-4036-8bdf-bc072651b67a">
+        <ApplicationInsightsAppender name="simpleCloudApp" instrumentationKey="[Instrumentation Key]">
         </ApplicationInsightsAppender>
     </Appenders>
     <Loggers>
