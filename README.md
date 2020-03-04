@@ -89,3 +89,39 @@ Go to Azure portal and create an application insight resource. Make sure to copy
 </ApplicationInsights>
 
 ```
+
+## Add log4j file in resources directory
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration packages="com.microsoft.applicationinsights.log4j.v2">
+    <Properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} --- [%15.15t] %-40.40c{1.} : %m%n%ex
+        </Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <ApplicationInsightsAppender name="simpleCloudApp" instrumentationKey="[Instrumentation Key from Application Insight Resource page]">
+        </ApplicationInsightsAppender>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="Console"  />
+            <AppenderRef ref="simpleCloudApp"  />
+        </Root>
+    </Loggers>
+</Configuration>
+```
+
+## Create a jar file
+
+mvn package 
+
+## Execute the program 
+
+java -jar target/SimpleJavaCloudAppInsight-1.0-SNAPSHOT.jar
+
+
