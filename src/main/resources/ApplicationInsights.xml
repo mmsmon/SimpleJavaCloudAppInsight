@@ -2,7 +2,7 @@
 <ApplicationInsights xmlns="http://schemas.microsoft.com/ApplicationInsights/2013/Settings" schemaVersion="2014-05-30">
 
     <!-- The key from the portal: -->
-    <InstrumentationKey>4084660c-da48-4036-8bdf-bc072651b67a</InstrumentationKey>
+    <InstrumentationKey>[Instrumentation Key]</InstrumentationKey>
 
     <Channel type="com.microsoft.applicationinsights.channel.concrete.inprocess.InProcessTelemetryChannel">
         <DeveloperMode>false</DeveloperMode>
